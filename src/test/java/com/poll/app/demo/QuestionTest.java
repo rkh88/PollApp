@@ -28,8 +28,8 @@ public class QuestionTest {
         question1.setAnswerList(answers);
         Assert.assertFalse(questionManager.isQuestionValid(question1));
         Question question12  = new Question(1L, "ed", QuestionType.OneVarAnswer, poll);
-        question1.setAnswerList(answers);
-        Assert.assertFalse(questionManager.isQuestionValid(question12));
+        question12.setAnswerList(answers);
+        Assert.assertTrue(questionManager.isQuestionValid(question12));
 
     }
 

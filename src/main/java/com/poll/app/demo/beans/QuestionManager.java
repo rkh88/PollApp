@@ -23,7 +23,7 @@ public class QuestionManager {
             Set<Answer> answerSet = question.getAnswerList();
 
             if (questionType == QuestionType.OneVarAnswer
-                    && answerSet.size() == 1) {
+                    && answerSet.size() >= 1) {
                 return true;
             }
             if (questionType == QuestionType.MultiVarAnswer
