@@ -10,6 +10,7 @@ import com.sun.istack.NotNull;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.*;
@@ -31,7 +32,7 @@ public class Poll  implements Serializable {
     @Column(name="name", nullable = false)
     private String name;
 
-   // @NotEmpty(message = "Propety startDate is empty but this is not allowed")
+    //@NotEmpty(message = "Propety startDate is empty but this is not allowed")
     @Column(name="startDate",  updatable = false, nullable = false)
     private LocalDate startDate;
 
